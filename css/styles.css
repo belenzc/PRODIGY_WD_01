@@ -1,0 +1,225 @@
+@font-face {
+    font-family: 'WeezerFont';
+    src: url('assets/font/WeezerFont.ttf.woff') format('woff'),
+        url('assets/font/WeezerFont.ttf.svg') format('svg'),
+        url('assets/font/WeezerFont.ttf.eot');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #230716;
+}
+
+.hide {
+    display: none;
+}
+
+h4,
+.menu-sections,
+.btn {
+    font-family: 'WeezerFont', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+.section {
+    background-color: #fcd8eb;
+    margin-top: 2.5%;
+}
+
+.section:nth-child(odd) {
+    background-color: #fff;
+}
+
+nav,
+.page-footer {
+    background-color: #230716;
+}
+
+img,
+.comunidad-container,
+.btn,
+.testimonios {
+    border-radius: 7px;
+}
+
+img {
+    /* Para imgs chicas de "sobre nosotros" y "contacto" */
+    width: 100%;
+}
+
+.parallax img {
+    border-radius: 0px;
+}
+
+/* -- NAVBAR -- */
+.material-icons {
+    color: #ffffff;
+}
+
+.brand-logo {
+    height: 100%;
+}
+
+.img-logo {
+    height: 100%;
+    padding: 5%;
+}
+
+nav ul a:hover,
+.sidenav a:hover {
+    color: #D5A6BD;
+}
+
+nav ul a.active {
+    color: #ff8be0;
+}
+
+/* -- FOOTER -- */
+.page-footer {
+    padding: 2% 0;
+}
+
+.page-footer .row {
+    margin-bottom: 0;
+}
+
+.contact-info p {
+    margin-top: 2%;
+    color: #ffffff;
+}
+
+.contact-info p,
+.contact-info i {
+    padding: 0;
+}
+
+.logo-footer {
+    height: 100px;
+}
+
+.social-link {
+    margin-top: 10%;
+}
+
+.redes-logo {
+    height: 25px;
+}
+
+/* -- FRASE SECTION -- */
+#quote {
+    margin: 0;
+}
+
+h5 {
+    /* frase luego de banner */
+    color: #a30077;
+    font-style: italic;
+    font-weight: 500;
+}
+
+/* -- ABOUT SECTION -- */
+#about h4 {
+    margin-top: 2.5%;
+}
+
+#about p {
+    font-size: 18px;
+}
+
+#beneficiosContainer .card {
+    margin-top: 5%;
+    box-shadow: none;
+}
+
+.card-image {
+    height: 150px;
+    padding: 10px;
+}
+
+.card-image img {
+    height: 100%;
+}
+
+/* -- TESTIMONIOS SECTION -- */
+#testimoniosContainer .card-content,
+h6 {
+    margin-bottom: 5%;
+}
+
+#testimoniosContainer .card-title {
+    margin-bottom: 7.5%;
+    font-size: 32px;
+}
+
+#testimoniosContainer .card-content p {
+    font-size: 16px;
+}
+
+/* -- COMUNIDAD SECTION -- */
+.comunidad-container {
+    /* background-color: #D5A6BD; */
+    background-color: #f5dcc6;
+}
+
+.btn,
+.btn:focus {
+    margin: 2% 0 5% 0;
+    background-color: #ffffff;
+    color: #cc772d;
+    box-shadow: #fbd5b4;
+}
+
+.btn:hover {
+    background-color: #f6892a;
+    color: #ffffff;
+}
+
+/* -- CONTACTO SECTION -- */
+.form-img {
+    width: 90%;
+}
+
+.form-container {
+    padding-top: 2.5% !important;
+}
+
+input,
+textarea {
+    border-bottom: 1px solid #a30077 !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #a3007769;
+}
+
+input:focus,
+textarea:focus {
+    border-bottom: 1px solid #FF00BC !important;
+    box-shadow: 0 0.5px 0 0 #FF00BC !important;
+}
+
+.error,
+input.error:focus,
+textarea.error:focus {
+    /* color: #ff0037; */
+    border-bottom: 1px solid #ff0037 !important;
+    box-shadow: 0 0.5px 0 0 #ff0037 !important;
+}
+
+.helper-text {
+    color: #ff0037d0 !important;
+}
+
+input.error::placeholder,
+textarea.error::placeholder {
+    color: #ff00376b;
+}
+
+.valido {
+    color: #71a72a;
+    border-bottom: 1px solid #71a72a !important;
+    box-shadow: 0 0.5px 0 0 #71a72a !important;
+}

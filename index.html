@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Crisálida</title>
+</head>
+
+<body>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#home" class="brand-logo"><img src="css/assets/graphics/logo_1.svg" class="img-logo"
+                        alt="Logo de la empresa 'Crisalida'"></a>
+                <a href="#" data-target="mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#home" class="menu-sections">Inicio</a></li>
+                    <li><a href="#about" class="menu-sections">Sobre nosotros</a></li>
+                    <li><a href="#testimonios" class="menu-sections">Testimonios</a></li>
+                    <li><a href="#comunidad" class="menu-sections">Comunidad</a></li>
+                    <li><a href="#contacto" class="menu-sections">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Sidebar nav for mobile & tablet -->
+    <ul class="sidenav" id="mobile">
+        <li><a href="#home" class="menu-sections">Inicio</a></li>
+        <li><a href="#about" class="menu-sections">Sobre nosotros</a></li>
+        <li><a href="#testimonios" class="menu-sections">Testimonios</a></li>
+        <li><a href="#comunidad" class="menu-sections">Comunidad</a></li>
+        <li><a href="#contacto" class="menu-sections">Contacto</a></li>
+    </ul>
+
+    <!-- Page contents -->
+    <div id="home" class="parallax-container scrollspy">
+        <div class="parallax">
+            <img class="hide-on-small-only" src="css/assets/imgs/AdobeStock_638524871_PreviewBanner.png">
+        </div>
+        <div class="parallax">
+            <img class="hide-on-large-only" src="css/assets/imgs/AdobeStock_651952265_Preview.png">
+        </div>
+    </div>
+
+    <div id="quote" class="section scrollspy">
+        <div class="row container">
+            <div class="col s12 l12 center-align">
+                <h5>Las mujeres y la imagen corporal: una continua batalla contra el autoestima</h5>
+            </div>
+        </div>
+    </div>
+
+    <div id="about" class="section scrollspy">
+        <div class="row container">
+            <div class="col s12 l5">
+                <img class="hide-on-small-only" src="css/assets/imgs/AdobeStock_306169689_Preview.jpg">
+                <img class="hide-on-large-only" src="css/assets/imgs/AdobeStock_567934302_Preview.jpg">
+            </div>
+            <div class="col s12 l7">
+                <h4>Sobre nosotros</h4>
+                <p> Crisálida es una agencia de publicidad y plataforma online por medio de la cual se busca la creación
+                    de una comunidad sólida donde se promulgan los conceptos asociados al body neutrality y se busca por
+                    medio de representaciones más realistas que se genere un sentido de pertenencia y un aumento en el
+                    autoestima de las muejeres.</p>
+            </div>
+            <div id="beneficiosContainer" class="col s12 l12"></div>
+        </div>
+    </div>
+
+    <div id="testimonios" class="section scrollspy">
+        <div class="row container">
+            <div class="col s12 center-align">
+                <h4>Testimonios</h4>
+                <h6>Según estudios realizados:</h6>
+                <div id="testimoniosContainer"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="comunidad" class="section scrollspy">
+        <div class="row container">
+            <div class="col s12 center-align comunidad-container">
+                <h4>Comunidad</h4>
+                <a href="https://discord.com/" class="btn" target="_blank">¡Se parte de la comunidad!</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="contacto" class="section scrollspy">
+        <div class="row container">
+            <div class="col s12 l6 center-align">
+                <h4>¡Trabaja con nosotros!</h4>
+                <img class="form-img" src="css/assets/imgs/AdobeStock_658673161_Preview.jpg">
+            </div>
+
+            <div class="col s12 l6 form-container">
+                <form id="form-contact">
+                    <div class="input-field col s12">
+                        <input type="text" placeholder="Nombre y Apellido" name="nombre" id="nombre">
+                        <span class="helper-text span-nombre"></span>
+                    </div>
+                    <div class="input-field col s12">
+                        <input type="email" placeholder="Email" name="email" id="email">
+                        <span class="helper-text span-email"></span>
+                    </div>
+                    <div class="input-field col s12">
+                        <textarea placeholder="Escribe un mensaje..." name="mensaje" id="mensaje"
+                            class="materialize-textarea"></textarea>
+                        <span class="helper-text span-mensaje"></span>
+                    </div>
+                    <div id="errorDiv" class="hide">
+                        <p id="error">error</p>
+                    </div>
+                    <button class="btn col s12" type="submit" name="action">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l7 contact-info">
+                    <img src="css/assets/graphics/logo_2.svg" class="logo-footer col s3 l3"
+                        alt="Logo de la empresa 'Crisalida'">
+                    <div>
+                        <p class="col s8 l9 offset-s1"><i class="material-icons col l2">email</i> info@crisalida.org.uy
+                        </p>
+                        <p class="col s8 l9 offset-s1"><i class="material-icons col s2 l2">call</i> +598 92 667 890</p>
+                    </div>
+                </div>
+                <div class="col s12 l5 redes-container">
+                    <a href="#" target="_blank" class="col s4 l2 offset-l6 social-link">
+                        <img src="css/assets/graphics/instagram-white.svg" class="redes-logo" alt="Logo de Instagram'">
+                    </a>
+                    <a href="#" target="_blank" class="col s4 l2 social-link">
+                        <img src="css/assets/graphics/twitter-white.svg" class="redes-logo" alt="Logo de Twitter">
+                    </a>
+                    <a href="#" target="_blank" class="col s4 l2 social-link">
+                        <img src="css/assets/graphics/youtube-white.svg" class="redes-logo" alt="Logo de Youtube">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+<script src="js/materialize.min.js"></script>
+<script src="js/components.js"></script>
+<script src="js/main.js"></script>
+
+</html>
